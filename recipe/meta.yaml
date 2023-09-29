@@ -1,5 +1,5 @@
 {% set name = "aiostream" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aiostream-{{ version }}.tar.gz
-  sha256: d64aa63cb9b96b4dae74b09f260d2d0fa423fbbd17bce29ed39ff8e5caf95b57
+  sha256: 055aa4bc49d72cff70e6325bc29732a0e2766dfdc6414cd38e77d23345788aa9
 
 build:
   number: 0
@@ -20,8 +20,7 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - python >=3.6
-    - async-exit-stack
+    - python >=3.8
     - typing_extensions
 
 test:
