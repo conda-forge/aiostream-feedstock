@@ -20,8 +20,7 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - python >=3.6
-    - async-exit-stack
+    - python >=3.8
     - typing_extensions
 
 test:
