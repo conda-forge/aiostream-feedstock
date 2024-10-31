@@ -1,5 +1,5 @@
 {% set name = "aiostream" %}
-{% set version = "0.6.3" %}
+{% set version = "0.6.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aiostream-{{ version }}.tar.gz
-  sha256: e2ad44e37f42008b7b14132239be787c103fd7ce5db6e1efab868ca18c66bd1d
+  sha256: f99bc6b1b9cea3e70885dc235a233523597555fe4a585ed21d65264b3f1ff3d2
 
 build:
   number: 0
