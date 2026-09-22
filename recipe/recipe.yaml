@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: aiostream
-  version: "0.7.2"
+  version: "0.8.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/aiostream-${{ version }}.tar.gz
-  sha256: ba9773f470cb0771f258c64e181a2a2b92b0aba76ce73585a5b1b40d8864247a
+  sha256: 32d180b4ab01ebb2fc59eda7fa59f496895a4d07b32fc57537d1dade2514a8a1
 
 build:
   number: 0
