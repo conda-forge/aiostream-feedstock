@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: aiostream
-  version: "0.8.1"
+  version: "0.8.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,18 +10,18 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/aiostream-${{ version }}.tar.gz
-  sha256: 32d180b4ab01ebb2fc59eda7fa59f496895a4d07b32fc57537d1dade2514a8a1
+  sha256: c29eefe214fe2719c211e2e57d301b993eda915ef6f9a8fc4ff83ff657bf48fc
 
 build:
   number: 0
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - setuptools
+    - setuptools >=77
   run:
     - python >=${{ python_min }}
     - typing_extensions
